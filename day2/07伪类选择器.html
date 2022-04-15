@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>伪类选择器</title>
+	<style>
+			/* 
+				将ul里第一个li设置成红色
+				*/
+			   /* 
+			   伪类（不存在的类，特殊的类）
+			   伪类一般情况下都是使用：开头
+			   ：first——child 第一个子元素
+			    last——child 最后一个子元素
+				nth——child（）选中第N个子元素
+					n的范围：0到正无穷
+						2n或者even表时选中偶数位
+						2n+1或odd表示选中奇数位
+					以上这些伪类都是根据所有子元素进行排序
+					
+				:first-of-type
+				:last-of-type
+				:nth-of-type
+					这几个伪类的功能和上述类似,不同点是他们是在同类型中进行排序
+				
+				:not()否定伪类
+					将符合条件的元素从选择其中去除
+				*/
+/* 		ul>li:first-child{
+			color: red;
+		} */
+/* 		ul>li:last-child{
+			color: red;
+		} */
+/* 		ul>li:nth-child(n){
+			color: red;
+		} */
+/* 		ul>li:nth-child(odd){
+			color: red;
+		} */
+/* 		ul>li:first-of-type{
+			color: red;
+		} */
+		ul>li:not(:nth-of-type(3)){
+			color: red;
+		}
+		
+	</style>
+</head>
+<body>
+	<ul>
+		<span>我是第一个span</span>
+		<li>第一个</li>
+		<li>第二个</li>
+		<li>第三个</li>
+		<li>第四个</li>
+		<li>第五个</li>
+	</ul>
+</body>
+</html>

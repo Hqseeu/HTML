@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>docun</title>
+<!--
+		将所有的段落设置为去红色（字体）
+			作用：根据标签名来选中指定的元素
+			语法：标签名{}
+			例子：p{}  h1{} div{}
+			Id选择器
+				作用：根据元素的id属性值选中一个元素
+				语法：#id属性值{}
+				例子：#box{} #red{}
+				class 是一个标签属性，
+			类选择器，它和ID类似，不同的是class 可以重复使用
+			可以同时为一个元素指定多个class
+			3通配选择器
+				作用：选中页面的所有元素
+				语法：*
+				-->
+	<style>
+/* 		p{
+			color: red;
+			font-size: 10px;
+		} */
+		#red{
+			color: tomato;
+		}
+		.blue{
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+	<p>少小离家老大回1</p>
+	<p>少小离家老大回2</p>
+	<p id="red">少小离家老大回3</p>
+	<p class="blue">少小离家老大回4</p>
+	<p class="blue">少小离家老大回5</p>
+	<p>少小离家老大回6</p>
+</body>
+</html>

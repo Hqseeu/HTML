@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>伪元素</title>
+	<style>
+		/* 
+		 伪元素 表示页面中一些特殊的并不真实存在的元素(特殊位置)
+			伪元素使用 ::开头
+			::first-letter  表示提到一个字母
+			::first-line  表示第一行
+			::selection 表示选中的内容
+			::before 元素的开始
+			::after  元素的最后
+					before和after 必须结合content属性来使用
+					
+			  */
+		p{
+			font-size: 20px;
+		}
+		p::first-letter{
+			font-size: 50px;
+		}
+		p::first-line{
+			color: yellowgreen;
+		}
+		P::selection{
+			color: navajowhite;
+		}
+		p::before{
+			content:"首"
+		}
+		P::after{
+			content:"尾"
+		}
+	</style>
+</head>
+<body>
+	<p>
+		Lorem ipsum dolor sit amet, 
+		consectetur adipisicing elit. 
+		Iure commodi suscipit unde cum
+		 repudiandae rem facere ipsa illum
+		  dolor ab. Odio accusantium veniam o
+		  ptio consectetur atque omnis quidem non at?
+	</p>
+</body>
+</html>
