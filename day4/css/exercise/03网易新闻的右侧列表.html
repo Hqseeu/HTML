@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>网易新闻右侧列表</title>
+	<link rel="stylesheet" type="text/css" href="../../day03/00reset.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/03对应.css"/>
+	<style>
+	a{
+		text-decoration: none;
+		/* /*同意去除下划线 */ */
+	}
+	.news-wrapper{
+		/* 设置容器的样式  */
+		
+		/* 宽度、高度 */
+		width: 300px;
+		height: 357px;
+		/*居中  */
+		margin: 50px auto;
+		 background-color: #BFA ;
+		 /*设置上边框  */
+		 border-top: 1px solid #DDD;
+		
+	}
+	.news-title{
+		display: inline-block;
+		
+		height: 30px;
+		/*设置上边框  */
+		border-top: 1px red;
+		/* 通过margin-top将H2上移 */
+		margin-top: -1px;
+		padding-top: 10px;
+		
+	}
+	.news-title a{
+		color: #40406B;
+		/*   加粗效果 */
+		font-weight: bold;
+		
+	}
+	.news-img{
+		height: 210px;
+	}
+	
+	
+	/*设置图片的文字效果  */
+	.news-img .img-title{
+		/* 字体颜色 */
+		color: #FFF;
+		/*字体向上移动  */
+		margin-top: -20px;
+		/*加粗  */
+		font-weight: bold;
+		
+		
+	}
+	 .iimg{
+		 width:300px;
+	 }
+	
+	
+	</style>
+</head>
+<body>
+	<!-- 创建一个新闻列表外侧的容器 -->
+	<div class="news-wrapper">
+		<!-- 创建一个标题标签 -->
+		<h2 class="news-title">
+			<a href="#">体育</a>
+		</h2>
+		
+		<!-- 创建一个图片容器 -->
+		<div class="news-img">
+			<img class="iimg" src="https://cms-bucket.ws.126.net/2022/0416/9bbe6a1fj00rafdpg002mc000go00b4c.jpg"  alt="谷爱令">
+			<!-- 创建图片标题 -->
+			<h3 class="img-title">
+				网友偶遇谷爱凌
+			</h3>
+		</div>
+		
+		<!-- 新闻列表 -->
+		<ul class="news-list">
+			<li>
+				<a href="#">76人季后赛危险！大帝又要哭？</a>
+			</li>
+			<li>
+				<a href="#">广东与天斗，辽宁斗自己</a>
+			</li>
+			<li>
+				<a href="#">25岁入选国家队，退役生子！3年后复出灭韩</a>
+			</li>
+			<li>
+				<a href="#">NBA最会抢断的男人，从鹈鹕"偷走"650万</a>
+			</li>
+		</ul>
+		
+		
+	</div>
+</body>
+</html>
