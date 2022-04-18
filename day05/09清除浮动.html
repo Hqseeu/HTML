@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title></title>
+		<style type="text/css">
+			/* 	
+		
+		\
+			
+		 */
+
+
+			/* 3、父级添加after为元素 */
+			/* 			.clerafix::after{
+				content: "";
+				display: block;
+				height: 0;
+				clear: both;
+				visibility: hidden;
+			}
+			.clerafix{
+				*zoom: 1;
+			}
+			 */
+
+			/* 4、父级添加双伪元素 */
+			.clerafix:before,
+			.clerafix:after {
+				content: "";
+				display: table;
+
+			}
+
+			.clerafix:after {
+				clear: both;
+			}
+
+			.clerafix {
+				*zoom: 1;
+			}
+
+
+
+			.box1 {
+				width: 900px;
+				background-color: #805229;
+				/* 2、父级添加overflow属性 */
+				/* overflow: hidden; */
+
+			}
+
+			.box3 {
+				width: 100px;
+				height: 100px;
+				background-color: pink;
+				float: left;
+			}
+
+			.box4 {
+				width: 100px;
+				height: 100px;
+				background-color: gray;
+				float: left;
+			}
+
+			/* 1、额外标签发也成为隔墙发，是W3C推荐的做法
+						添加的元素必须为块级元素*/
+			/* 			.clear{
+				clear:both;
+			} */
+			.box6 {
+				width: 1002px;
+				height: 100px;
+				background-color: burlywood;
+			}
+			
+			
+			
+			/* 为什么需要清除浮动？
+				父级没有高度
+				子盒子浮动了
+				影响下面布局了，我们就应该清除浮动了*/
+		</style>
+	</head>
+	<body>
+		<div class="box1 clerafix">
+			<div class="box3">2</div>
+			<div class="box4"></div>
+			<div class="box5"></div>
+			<div class="clear"></div>
+		</div>
+		<div class="box6"></div>
+	</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title></title>
+		<style type="text/css">
+			/* 浮动特性
+		 1、脱离标准普通控制（浮）移动到指定位置（动），（俗称脱标）
+		 2、浮动的盒子不在保留原先的位置*/
+		 
+		 
+		 /* 
+		 3、浮动行元素会具有行内块特性
+		 任何元素都可以浮动。不管原先是什么模式的元素，添加浮动之后具有行内块元素相似的特性 */
+			.box1 {
+				width: 100px;
+				height: 100px;
+				background-color: #0000FF;
+				float: left;
+			}
+			.box2 {
+				width: 200px;
+				height: 200px;
+				background-color: #23ff9c;
+			}
+			.box3 {
+				width: 20px;
+				height: 20px;
+				background-color: #aaaaff;
+				float: left;
+			}
+			.box4 {
+				width: 50px;
+				height: 50px;
+				background-color: #ffbeca;
+				float: left;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1">
+
+		<!-- 浮动的盒子 -->
+		</div>
+		<div class="box3">
+			3<!--第二个浮动的盒子 -->
+		</div>
+		<div class="box4">
+			<!-- 盒子 -->
+		</div>
+		<div class="box2">
+			<!-- 标准流的盒子 -->
+		</div>
+	</body>
+</html>
