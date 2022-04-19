@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+	<!--如果父元素没有定位则以上一级组先元素、直至有定位或者浏览器文档定位
+			如果父元素有定位 则以父元素进行定位
+			绝对定位不在占有原先的点（脱标）！！！！！
+			-->
+	<style type="text/css">
+		.box1 {
+			position: relative;
+			width: 100px;
+			height: 100px;
+			background-color: blue;
+
+		}
+
+		.box2 {
+			position: absolute;
+			right: 22px;
+			width: 40px;
+			height: 20px;
+			background-color: pink;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="box1">
+		<div class="box2">2222222222</div>
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+	<style type="text/css">
+		.box1{
+			position: absolute;
+			
+			width: 100px;
+			height: 100px;
+			background-color: #aa0000;
+			/* 定位的叠放次序，只有定位的盒子才有z-index属性 */
+			z-index:2;
+		}
+		.box2{
+			position: absolute;
+			left: 40px;
+			top: 30px;
+			width: 100px;
+			height: 100px;
+			background-color: #efff34;
+			z-index:1;
+		}
+		.box3{
+			/* 用定位控制盒子水平居中与垂直居中算法 */
+			position: absolute;
+			left:50%;
+			margin-left: -50px;
+			margin-top: -50px;
+			top:50%;
+			width: 100px;
+			height: 100px;
+			background-color: #ffaa7f;
+			
+		}
+	</style>
+</head>
+<body>
+	<div class="box1">1111</div>
+	<div class="box2">2222</div>
+	<div class="box3">3333</div>
+</body>
+</html>
