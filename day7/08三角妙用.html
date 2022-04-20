@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title></title>
+	<style>
+		.box1{
+			width: 0;
+			height: 0;
+			/* 上边框调大 */
+			/* border-top: 100px solid transparent; */
+			/* 把上面的改成透明色即可获取直角三角形 */
+			/* border-right: 50px solid skyblue; */
+			/* border-bottom: 0px solid blue;
+			border-left: 0px solid green;
+			 */
+			/* 第二种简写 */
+			border-color: transparent red transparent transparent;
+			border-style: solid;
+			border-width: 100px 50px 0 0;
+		}
+		.price{
+			width: 160px;
+			height: 24px;
+			border: 1px solid red;
+			margin: 0 auto;
+			text-align: center;
+			}
+		.miaosha{
+			position: relative;
+			float: left;
+			width: 90px;
+			height: 100%;
+			background-color: red;
+			color: #F7F7F7;
+			font-size: 700;
+			margin-right: 8px;
+			
+		}
+		.miaosha i{
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 0;
+			height: 0;
+			border-color: transparent white transparent transparent;
+			border-style: solid;
+			border-width: 24px 10px 0 0;
+			
+		}
+		.yuanjia{
+			font-size: 12px;
+			color: gray;
+			text-decoration: line-through;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="box1"></div>
+	<div class="price">
+		<span class="miaosha">
+			￥1506
+			<i></i>
+		</span>
+		<span class="yuanjia">￥1999</span>
+	</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title></title>
+		<style type="text/css">
+			/* 1、选择ul里li的首个孩子 */
+			ul li:first-child {
+				background-color: pink;
+			}
+
+			/* 选择ul 里 li 的最后一个孩子 */
+			ul li:last-child {
+				background-color: gray;
+			}
+
+			/*  选择ul 里li的第2n个元素(n从0到无穷)
+		 (even)偶数  (odd)奇数
+		 n可以用公式带入
+		可以用于隔行变色
+		n+5 第五个开始    	-n-5前5个 包含第5个*/
+/* 			ul li:nth-child(2n) {
+				background-color: skyblue;
+			} */
+
+			/* E：first-child与 E:first-of-type的区别 */
+			
+			
+			/* 所有的孩子都进行排列
+			 执行的时候首先 nth-child(1) 一号 之后会看
+			 是否属于div 所以没有满足*/
+			section div:nth-child(1){
+				background-color: black;
+			}
+			/* 会将指定的元素(div)进行排列序号
+			 首先判定div 再选择第几个元素*/
+			section div:nth-of-type(1){
+				background-color: yellow;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+		</ul>
+		<!-- 区别 -->
+		<section>
+			<p>P标签</p>
+			<div>我是div1</div>
+			<div>我是div2</div>
+		</section>
+	</body>
+</html>

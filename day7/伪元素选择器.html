@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>伪元素选择器before和after</title>
+		<!-- 文档树中不会生成 -->
+		<style type="text/css">
+			div{
+				width: 200px;
+				height: 200px;
+				background-color: pink;
+			}
+			div::before{
+				/* 这个content是必须要写的 
+				
+					伪类选择器权重为1
+					且为行内元素 需要转换为行内块元素*/
+				display: inline-block;
+				content: '我';
+				width: 40px;
+				background-color: #FFFF00;
+				
+			}
+			div::after{
+				content: 'qkc';
+			}
+		</style>
+
+	</head>
+	<body>
+		<div>
+			是
+		</div>
+	</body>
+</html>
